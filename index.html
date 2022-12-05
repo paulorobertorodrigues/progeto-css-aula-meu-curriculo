@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf9e1f82e4.js" crossorigin="anonymous"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap'); </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Paulo Roberto</title>
+</head>
+<body>
+    <header>
+        <!--minha logo-->
+        <div>
+            <img src="./foto paulo.jpg" width="100" alt="foto paulo">
+        </div>
+        <ul>
+            <li><a target="_blank"  class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/paulo-roberto-503b1b243/"></a></li>
+            <li><a target="_blank"  class="fa-brands fa-github" href="https://github.com/paulorobertorodrigues"></a></li>
+            <li><a target="_blank"  class="fa-sharp fa-solid fa-envelope" href="http://mailto:pauloroberto23061985@gmail.com"></a></li>
+            <li><a target="_blank"  class="fa-brands fa-whatsapp" href="http://wa.me/22998598130"></a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Paulo Roberto Menezes Rodrigues</h1>
+                <h5>Desenvolvedor Full Stack</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>Sou natural do Rio de Janeiro, sempre gostei da área de tecnologia, a anos atrás 
+                   fiz cursos na área de informática e fui evoluindo para manutenção de computadores,
+                   fiz mais cursos sempre estudando eletrônica e conserto de computadores, Smartphones,
+                   notebooks, games. Em seguida comecei estudando programação por conta própria à alguns 
+                   meses atrás, estudando HTML5 , CSS3, JavaScript, Java, estudando me esforçando para alcançar 
+                   meu objetivo que é ser um Programador buscando assim a minha primeira oportunidade, assim com ajuda de Deus e da 
+                   Gama Academy tenho certeza que em breve serei m Programador Júnior.
+                </p>
+            </div>
+
+            <div class="form">
+                    <p>Deixe seu contato!</p>
+            </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+
+
+        </section>
+    </main>   
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
